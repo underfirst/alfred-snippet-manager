@@ -1,0 +1,8 @@
+{
+  "alfredsnippet": {
+    "uid": "6B72C3BB-E9E5-4B8E-B4B0-D5C078340BB6",
+    "name": "download_file",
+    "snippet": "from pathlib import Path\n\nimport requests\n\n\ndef download_file(url: str, filepath: str | Path):\n    ret = requests.get(url)\n    if ret.status_code == 200:\n        print(\"downloaded\", filepath)\n        with open(filepath, \"wb\") as f:\n            f.write(ret.content)\n",
+    "keyword": "download_file"
+  }
+}

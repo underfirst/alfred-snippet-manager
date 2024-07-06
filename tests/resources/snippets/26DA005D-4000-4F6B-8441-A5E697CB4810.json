@@ -1,0 +1,8 @@
+{
+  "alfredsnippet": {
+    "uid": "26DA005D-4000-4F6B-8441-A5E697CB4810",
+    "name": "run_sh",
+    "snippet": "from subprocess import PIPE, run\n\n\ndef run_sh(command: str, return_err: bool = False) -> str | tuple[str, str]:\n    ret = run(command, shell=True, stdout=PIPE, stderr=PIPE, text=True)\n    if return_err:\n        return ret.stdout, ret.stderr\n    return ret.stdout\n",
+    "keyword": "run_sh"
+  }
+}

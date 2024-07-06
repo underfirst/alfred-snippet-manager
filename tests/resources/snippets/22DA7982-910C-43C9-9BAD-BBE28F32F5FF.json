@@ -1,0 +1,8 @@
+{
+  "alfredsnippet": {
+    "uid": "22DA7982-910C-43C9-9BAD-BBE28F32F5FF",
+    "name": "find_list",
+    "snippet": "def find_list(item: str, keys: list[str]) -> bool:\n    for key in keys:\n        if item.find(key) != -1:\n            return True\n    return False\n",
+    "keyword": "find_list"
+  }
+}
