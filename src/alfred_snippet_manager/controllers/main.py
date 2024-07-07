@@ -129,7 +129,7 @@ class AlfredSnippetManager:
         self.repo_dir.mkdir(parents=True, exist_ok=True)
         for repo in setting.repo:
             run(
-                f"""cd {self.repo_dir!s};
+                f"""cd {self.repo_dir};
                         git clone {repo}""",
                 shell=True,
                 capture_output=True,
