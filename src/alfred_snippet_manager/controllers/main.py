@@ -20,7 +20,7 @@ class AlfredSnippetManager:
 
     def _dump_setting(self, setting: Setting) -> None:
         setting.dump(self.setting_path)
-
+        
     def get_preference_path(self) -> Path:
         setting = self._load_setting()
         return setting.get_preference_path(self.setting_path)
